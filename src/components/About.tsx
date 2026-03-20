@@ -13,7 +13,7 @@ const About = () => {
               <div className="space-y-8">
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   I'm an MBA candidate at Brandeis International Business School (STEM-designated) 
-                  with concentrations in Finance and Data Analytics, maintaining a 3.72 GPA. 
+                  with concentrations in Finance and Data Analytics. 
                   My background spans auditing in Vietnam, commercial real estate management, 
                   customs consulting at EY, and professional basketball operations.
                 </p>
@@ -34,7 +34,7 @@ const About = () => {
                   <div className="border-l-2 border-foreground pl-6">
                     <h5 className="text-lg font-medium mb-1">Brandeis University</h5>
                     <p className="text-muted-foreground">MBA — Finance & Data Analytics</p>
-                    <p className="text-minimal text-muted-foreground mt-1">2024 – 2026 · GPA 3.72</p>
+                    <p className="text-minimal text-muted-foreground mt-1">2024 – 2026</p>
                   </div>
                   <div className="border-l-2 border-foreground pl-6">
                     <h5 className="text-lg font-medium mb-1">Academy of Finance</h5>
@@ -45,11 +45,7 @@ const About = () => {
               </div>
               
               <div className="pt-8 border-t border-border">
-                <div className="grid grid-cols-3 gap-8">
-                  <div>
-                    <h4 className="text-minimal text-muted-foreground mb-2">GPA</h4>
-                    <p className="text-xl">3.72</p>
-                  </div>
+                <div className="grid grid-cols-2 gap-8">
                   <div>
                     <h4 className="text-minimal text-muted-foreground mb-2">LANGUAGES</h4>
                     <p className="text-xl">3</p>

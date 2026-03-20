@@ -38,7 +38,7 @@ const Contact = () => {
               <div>
                 <h4 className="text-minimal text-muted-foreground mb-6">CONNECT</h4>
                 <div className="space-y-4">
-                  <a href="https://linkedin.com/in/theo-dinh" target="_blank" rel="noopener noreferrer" className="block text-xl hover:text-muted-foreground transition-colors duration-300">
+                  <a href="https://www.linkedin.com/in/theo-dinh/" target="_blank" rel="noopener noreferrer" className="block text-xl hover:text-muted-foreground transition-colors duration-300">
                     LinkedIn
                   </a>
                 </div>
