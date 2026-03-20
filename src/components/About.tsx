@@ -1,3 +1,6 @@
+import photoRobHale from "@/assets/photo-rob-hale.jpg";
+import photoTatum from "@/assets/photo-jayson-tatum.jpg";
+
 const About = () => {
   return (
     <section id="about" className="py-32 bg-muted/20">
@@ -58,6 +61,33 @@ const About = () => {
                     <h4 className="text-minimal text-muted-foreground mb-2">COUNTRIES</h4>
                     <p className="text-xl">2</p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Photo Gallery */}
+          <div className="mt-32">
+            <h2 className="text-minimal text-muted-foreground mb-12">BEYOND THE RÉSUMÉ</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="group relative overflow-hidden">
+                <img 
+                  src={photoRobHale} 
+                  alt="Theo Dinh with Rob Hale, part owner of the Boston Celtics"
+                  className="w-full h-[500px] object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="mt-4">
+                  <p className="text-sm text-muted-foreground">With Rob Hale — Part Owner, Boston Celtics</p>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden">
+                <img 
+                  src={photoTatum} 
+                  alt="Theo Dinh with Jayson Tatum"
+                  className="w-full h-[500px] object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="mt-4">
+                  <p className="text-sm text-muted-foreground">With Jayson Tatum — NBA All-Star, Boston Celtics</p>
                 </div>
               </div>
             </div>
