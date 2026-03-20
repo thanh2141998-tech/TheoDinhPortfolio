@@ -45,11 +45,7 @@ const About = () => {
               </div>
               
               <div className="pt-8 border-t border-border">
-                <div className="grid grid-cols-3 gap-8">
-                  <div>
-                    <h4 className="text-minimal text-muted-foreground mb-2">GPA</h4>
-                    <p className="text-xl">3.72</p>
-                  </div>
+                <div className="grid grid-cols-2 gap-8">
                   <div>
                     <h4 className="text-minimal text-muted-foreground mb-2">LANGUAGES</h4>
                     <p className="text-xl">3</p>
