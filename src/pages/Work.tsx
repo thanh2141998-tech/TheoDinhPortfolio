@@ -4,93 +4,73 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 
-const Work = () => {
+const Experience = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
-  const projects = [
+  const experiences = [
     {
       image: project1,
-      title: "MINIMAL RESIDENCE",
-      location: "NEW YORK, 2024",
-      category: "RESIDENTIAL",
-      description: "A contemporary home focusing on light, space, and material honesty. The design emphasizes clean lines and natural materials.",
-      area: "450 SQM",
-      year: "2024"
+      title: "LEADVISORS CAPITAL GROUP",
+      location: "HANOI, 2021–2024",
+      category: "REAL ESTATE",
+      description: "Spearheaded leasing and asset management for Grade A/B office buildings, increasing occupancy from 49% to 75.5% and securing $1.5M in additional annual rental revenue.",
+      role: "OPERATIONS & LEASING EXEC",
+      year: "2021–2024"
     },
     {
       image: project2,
-      title: "CORPORATE HEADQUARTERS",
-      location: "LONDON, 2023",
-      category: "COMMERCIAL",
-      description: "Modern office space emphasizing collaboration and natural elements. Features flexible workspaces and sustainable design principles.",
-      area: "1200 SQM",
-      year: "2023"
+      title: "EY CONSULTING VIETNAM",
+      location: "HANOI, 2025",
+      category: "CONSULTING",
+      description: "Conducted HS code classification, customs valuation analysis, and origin determination for multinational clients, ensuring compliance with Vietnamese and international regulations.",
+      role: "CUSTOMS & TRADE INTERN",
+      year: "2025"
     },
     {
       image: project3,
-      title: "CULTURAL CENTER",
-      location: "TOKYO, 2023",
-      category: "CULTURAL",
-      description: "Public architecture that bridges tradition with contemporary design. A space for community gathering and cultural exchange.",
-      area: "800 SQM",
+      title: "HANOI BUFFALOES",
+      location: "HANOI, 2023",
+      category: "SPORTS",
+      description: "Established the team's first youth training program, recruiting 20+ athletes and winning the U18 VBA 3x3 championship. Managed operations across 8 cities.",
+      role: "TEAM MANAGER",
       year: "2023"
-    },
-    {
-      image: project1,
-      title: "URBAN LOFT",
-      location: "BERLIN, 2024",
-      category: "RESIDENTIAL",
-      description: "Industrial heritage meets contemporary living. Raw materials balanced with refined details.",
-      area: "180 SQM",
-      year: "2024"
     },
     {
       image: project2,
-      title: "GALLERY SPACE",
-      location: "PARIS, 2022",
-      category: "CULTURAL",
-      description: "Minimalist gallery designed to showcase art without distraction. Pure white spaces with carefully controlled lighting.",
-      area: "600 SQM",
-      year: "2022"
-    },
-    {
-      image: project3,
-      title: "BOUTIQUE HOTEL",
-      location: "MILAN, 2023",
-      category: "HOSPITALITY",
-      description: "Luxury hospitality redefined through architectural restraint. Every detail carefully considered for guest experience.",
-      area: "2400 SQM",
-      year: "2023"
+      title: "UHY AUDITING & CONSULTING",
+      location: "HANOI, 2020",
+      category: "FINANCE",
+      description: "Participated in audits for 10+ clients across manufacturing, retail, and real estate sectors, identifying discrepancies worth $250K and improving compliance.",
+      role: "AUDITING INTERN",
+      year: "2020"
     }
   ];
 
-  const categories = ["ALL", "RESIDENTIAL", "COMMERCIAL", "CULTURAL", "HOSPITALITY"];
+  const categories = ["ALL", "REAL ESTATE", "CONSULTING", "FINANCE", "SPORTS"];
 
-  const filteredProjects = activeCategory === "ALL" 
-    ? projects 
-    : projects.filter(project => project.category === activeCategory);
+  const filteredExperiences = activeCategory === "ALL" 
+    ? experiences 
+    : experiences.filter(exp => exp.category === activeCategory);
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Hero Section */}
       <section className="pt-32 pb-20">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
               <h1 className="text-6xl md:text-8xl font-light text-architectural mb-8">
-                OUR WORK
+                EXPERIENCE
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl">
-                A curated selection of our architectural projects, each telling a unique story 
-                through thoughtful design and meticulous attention to detail.
+                A journey across finance, real estate, consulting, and sports management — 
+                each role sharpening analytical and leadership skills.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Filter Categories */}
       <section className="pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
@@ -118,25 +98,22 @@ const Work = () => {
         </div>
       </section>
 
-      {/* Projects Grid */}
       <section className="pb-32">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 lg:gap-20">
-              {filteredProjects.map((project, index) => (
+              {filteredExperiences.map((exp, index) => (
                 <div key={index} className="group cursor-pointer">
                   <div className="relative overflow-hidden mb-8">
                     <img 
-                      src={project.image} 
-                      alt={project.title}
+                      src={exp.image} 
+                      alt={exp.title}
                       className="w-full h-[60vh] object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    
-                    {/* Project Category Badge */}
+                    <div className="absolute inset-0 bg-foreground/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="absolute top-6 left-6 bg-background/90 backdrop-blur-sm px-4 py-2">
                       <span className="text-minimal text-foreground">
-                        {project.category}
+                        {exp.category}
                       </span>
                     </div>
                   </div>
@@ -144,25 +121,25 @@ const Work = () => {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-2xl lg:text-3xl font-light text-architectural mb-2 group-hover:text-muted-foreground transition-colors duration-500">
-                        {project.title}
+                        {exp.title}
                       </h3>
                       <p className="text-minimal text-muted-foreground">
-                        {project.location}
+                        {exp.location}
                       </p>
                     </div>
                     
                     <p className="text-muted-foreground leading-relaxed">
-                      {project.description}
+                      {exp.description}
                     </p>
                     
                     <div className="flex gap-8 pt-4 border-t border-border">
                       <div>
-                        <p className="text-minimal text-muted-foreground mb-1">AREA</p>
-                        <p className="text-foreground">{project.area}</p>
+                        <p className="text-minimal text-muted-foreground mb-1">ROLE</p>
+                        <p className="text-foreground text-sm">{exp.role}</p>
                       </div>
                       <div>
                         <p className="text-minimal text-muted-foreground mb-1">YEAR</p>
-                        <p className="text-foreground">{project.year}</p>
+                        <p className="text-foreground">{exp.year}</p>
                       </div>
                     </div>
                   </div>
@@ -173,20 +150,19 @@ const Work = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
       <section className="py-32 bg-muted">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl font-light text-architectural mb-8">
-              Ready to Start
+              Interested in
               <br />
-              Your Project?
+              Working Together?
             </h2>
             <p className="text-xl text-muted-foreground mb-12">
-              Let's discuss how we can bring your architectural vision to life
+              Let's discuss how I can contribute to your team
             </p>
             <a 
-              href="#contact" 
+              href="/contact" 
               className="inline-block text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 relative group"
             >
               GET IN TOUCH
@@ -199,4 +175,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Experience;
