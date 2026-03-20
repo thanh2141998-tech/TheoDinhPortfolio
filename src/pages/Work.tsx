@@ -18,9 +18,9 @@ const Experience = () => {
     },
     {
       image: project2,
-      title: "EY CONSULTING VIETNAM",
+      title: "ERNST & YOUNG VIETNAM",
       location: "HANOI, 2025",
-      category: "CONSULTING",
+      category: "FINANCE & CONSULTING",
       description: "Conducted HS code classification, customs valuation analysis, and origin determination for multinational clients, ensuring compliance with Vietnamese and international regulations.",
       role: "CUSTOMS & TRADE INTERN",
       year: "2025"
@@ -38,14 +38,14 @@ const Experience = () => {
       image: project2,
       title: "UHY AUDITING & CONSULTING",
       location: "HANOI, 2020",
-      category: "FINANCE",
+      category: "FINANCE & CONSULTING",
       description: "Participated in audits for 10+ clients across manufacturing, retail, and real estate sectors, identifying discrepancies worth $250K and improving compliance.",
       role: "AUDITING INTERN",
       year: "2020"
     }
   ];
 
-  const categories = ["ALL", "REAL ESTATE", "CONSULTING", "FINANCE", "SPORTS"];
+  const categories = ["ALL", "REAL ESTATE", "FINANCE & CONSULTING", "SPORTS"];
 
   const filteredExperiences = activeCategory === "ALL" 
     ? experiences 
