@@ -1,5 +1,3 @@
-import photoRobHale from "@/assets/photo-rob-hale.jpg";
-import photoTatum from "@/assets/photo-jayson-tatum.jpg";
 
 const About = () => {
   return (
