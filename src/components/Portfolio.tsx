@@ -12,7 +12,7 @@ const Portfolio = () => {
     },
     {
       image: project2,
-      title: "ERNST & YOUNG VIETNAM",
+      title: "ERNST & YOUNG (EY)",
       location: "HANOI, 2025",
       description: "Conducted HS code classification, customs valuation, and origin determination for multinational clients. Prepared technical memos and advisory reports, streamlining compliance processes across Vietnamese and international regulations."
     },

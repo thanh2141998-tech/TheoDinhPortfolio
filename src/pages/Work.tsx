@@ -18,7 +18,7 @@ const Experience = () => {
     },
     {
       image: project2,
-      title: "ERNST & YOUNG VIETNAM",
+      title: "ERNST & YOUNG (EY)",
       location: "HANOI, 2025",
       category: "FINANCE & CONSULTING",
       description: "Conducted HS code classification, customs valuation analysis, and origin determination for multinational clients, ensuring compliance with Vietnamese and international regulations.",
@@ -34,15 +34,6 @@ const Experience = () => {
       role: "TEAM MANAGER",
       year: "2023"
     },
-    {
-      image: project2,
-      title: "UHY AUDITING & CONSULTING",
-      location: "HANOI, 2020",
-      category: "FINANCE & CONSULTING",
-      description: "Participated in audits for 10+ clients across manufacturing, retail, and real estate sectors, identifying discrepancies worth $250K and improving compliance.",
-      role: "AUDITING INTERN",
-      year: "2020"
-    }
   ];
 
   const categories = ["ALL", "REAL ESTATE", "FINANCE & CONSULTING", "SPORTS"];
