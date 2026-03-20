@@ -18,7 +18,7 @@ const Experience = () => {
     },
     {
       image: project2,
-      title: "ERNST & YOUNG VIETNAM",
+      title: "ERNST & YOUNG (EY)",
       location: "HANOI, 2025",
       category: "FINANCE & CONSULTING",
       description: "Conducted HS code classification, customs valuation analysis, and origin determination for multinational clients, ensuring compliance with Vietnamese and international regulations.",
