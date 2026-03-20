@@ -34,7 +34,7 @@ const About = () => {
                   <div className="border-l-2 border-foreground pl-6">
                     <h5 className="text-lg font-medium mb-1">Brandeis University</h5>
                     <p className="text-muted-foreground">MBA — Finance & Data Analytics</p>
-                    <p className="text-minimal text-muted-foreground mt-1">2024 – 2026 · GPA 3.72</p>
+                    <p className="text-minimal text-muted-foreground mt-1">2024 – 2026</p>
                   </div>
                   <div className="border-l-2 border-foreground pl-6">
                     <h5 className="text-lg font-medium mb-1">Academy of Finance</h5>
