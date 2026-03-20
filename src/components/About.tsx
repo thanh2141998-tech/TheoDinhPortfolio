@@ -66,6 +66,7 @@ const About = () => {
 
 
 
+
           {/* Photo Gallery */}
           <div className="mt-32">
             <h2 className="text-minimal text-muted-foreground mb-12">BEYOND THE RÉSUMÉ</h2>
