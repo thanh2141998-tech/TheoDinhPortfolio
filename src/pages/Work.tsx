@@ -34,15 +34,6 @@ const Experience = () => {
       role: "TEAM MANAGER",
       year: "2023"
     },
-    {
-      image: project2,
-      title: "UHY AUDITING & CONSULTING",
-      location: "HANOI, 2020",
-      category: "FINANCE & CONSULTING",
-      description: "Participated in audits for 10+ clients across manufacturing, retail, and real estate sectors, identifying discrepancies worth $250K and improving compliance.",
-      role: "AUDITING INTERN",
-      year: "2020"
-    }
   ];
 
   const categories = ["ALL", "REAL ESTATE", "FINANCE & CONSULTING", "SPORTS"];
