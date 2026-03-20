@@ -13,7 +13,7 @@ const About = () => {
               <div className="space-y-8">
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   I'm an MBA candidate at Brandeis International Business School (STEM-designated) 
-                  with concentrations in Finance and Data Analytics, maintaining a 3.72 GPA. 
+                  with concentrations in Finance and Data Analytics. 
                   My background spans auditing in Vietnam, commercial real estate management, 
                   customs consulting at EY, and professional basketball operations.
                 </p>
