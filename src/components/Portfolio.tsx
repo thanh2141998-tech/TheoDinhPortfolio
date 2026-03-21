@@ -31,7 +31,7 @@ const Portfolio = () => {
           <div className="mb-20">
             <h2 className="text-minimal text-muted-foreground mb-4">SELECTED EXPERIENCE</h2>
             <h3 className="text-4xl md:text-6xl font-light text-architectural">
-              Career Highlights
+              CAREER
             </h3>
           </div>
           
