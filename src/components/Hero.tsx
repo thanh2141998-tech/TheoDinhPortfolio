@@ -17,7 +17,8 @@ const Hero = () => {
           DINH
         </h1>
         <p className="text-xl md:text-2xl text-white/80 font-light tracking-wide max-w-2xl mx-auto reveal-delayed">
-          MBA candidate driving data-informed decisions across finance, real estate, and global trade
+          MBA candidate driving data-informed decisions across finance, real estate, and investment
+
         </p>
       </div>
       
